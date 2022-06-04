@@ -53,7 +53,7 @@
 
 ## Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/Professor-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=TWF1bGlrcGF0ZWxsL2F1dG9maWx0ZXJib3QtMi4wIG1haW4)
 
 ## Commands
 ```
