@@ -42,13 +42,18 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💥 𝙾𝚆𝙽𝙴𝚁 💥', url='https://t.me/DTG_Admin_bot'), 
-            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url='https://t.me/DTG_BOTS')
-            ],[      
-            InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', callback_data='help'),
-            InlineKeyboardButton('💫 𝙰𝙱𝙾𝚄𝚃 💫', callback_data='about')
+            InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('👑 Main Channel', url='https://t.me/FULL_OF_ENTERTAINMENT')
+            ],[
+            InlineKeyboardButton('🍿 Request Group', url='https://t.me/+6XIxQsXUwhNjZjM1'),
+            InlineKeyboardButton('🎬 Bot Movie Channel', url='https://t.me/+JvBQVB9fa4ExMmFl')
+            ],[
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('🤖 About', callback_data='about')
+        ],[
+            InlineKeyboardButton('🔔 Movies Update', url='https://t.me/+ShKC-Q5qceFmYjBl')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
