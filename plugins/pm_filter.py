@@ -757,13 +757,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💥 𝙾𝚆𝙽𝙴𝚁 💥', url='http://t.me/DTG_Admin_bot'), 
-            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url='https://t.me/DTG_BOTS')
-            ],[      
-            InlineKeyboardButton('ℹ️ Featurs ℹ️', callback_data='help'),
-            InlineKeyboardButton('💫 𝙰𝙱𝙾𝚄𝚃 💫', callback_data='about')
+            InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('👑 Main Channel', url='https://t.me/FULL_OF_ENTERTAINMENT')
+            ],[
+            InlineKeyboardButton('🍿 Request Group', url='https://t.me/+6XIxQsXUwhNjZjM1'),
+            InlineKeyboardButton('🎬 Bot Movie Channel', url='https://t.me/+JvBQVB9fa4ExMmFl')
+            ],[
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('🤖 About', callback_data='about')
+        ],[
+            InlineKeyboardButton('🔔 Movies Update', url='https://t.me/+ShKC-Q5qceFmYjBl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
