@@ -176,7 +176,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{📩DOWNLOAD(DOWNLOAD)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_text(file.text_text)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
