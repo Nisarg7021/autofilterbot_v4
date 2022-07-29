@@ -50,4 +50,4 @@ ffmpeg
 Pillow
 ujson
 speedtest
-Heroku3
+heroku3
